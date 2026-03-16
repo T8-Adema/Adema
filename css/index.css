@@ -100,9 +100,6 @@
 }
 
 /*brand section*/
-.brand-section {
-  border-bottom: 1px solid #31331e;
-}
 
 .brand-image {
   position: relative;
@@ -136,6 +133,20 @@
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 1.5rem;
+}
+
+/*guide section*/
+.guides-section {
+  border-bottom: 1px solid #31331e;
+  padding: 0.7rem 1.5rem;
+  text-align: left;
+}
+
+.guides-section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
@@ -271,6 +282,9 @@
 
   /*brand section*/
   .brand-section {
+    border-bottom: 1px solid #31331e;
+  }
+  .brand-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -307,5 +321,14 @@
   .brand-text p {
     font-size: 16px;
     max-width: 560px;
+  }
+
+  /*guide section*/
+  .guides-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .guides-section h2 {
+    font-size: 36px;
   }
 }
