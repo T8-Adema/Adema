@@ -1,0 +1,69 @@
+.product-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product-card {
+  position: relative;
+  border: 2px solid #31331e;
+  border-right: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.product-card:last-child {
+  border-right: 2px solid #31331e;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-info {
+  margin-top: 10px;
+  color: #31331e;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 40px 0 5px;
+}
+
+.product-price {
+  font-size: 16px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #3b3d2c8e;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.new-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3b3d2c;
+}
+
+/* mørkt overlay */
+.soldout::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #3b3d2c2d;
+  z-index: 1;
+}
+
+/* teksten ovenpå */
+.soldout-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: #31331e;
+  z-index: 2;
+}
