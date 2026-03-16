@@ -5,11 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav-menu-left">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="html/shop.html">SHOP</a></li>
+          <li><a href="html/about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="billeder/Logo.png" alt="Logo" />
+      </div>
+      <nav class="nav-menu-right">
+        <ul>
+          <li><a href="#">SEARCH</a></li>
+          <li><a href="#">CART</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="category-cards">
+            <article class="category-card">
+              <a href="html/shop.html">
+                <img src="billeder/parfume1.webp" alt="Shop unisex" />
+              </a>
+              <a href="html/shop.html">Shop Unisex</a>
+            </article>
+
+            <article class="category-card">
+              <a href="html/shop.html">
+                <img src="billeder/ansigt.webp" alt="Shop women" />
+              </a>
+              <a href="html/shop.html">Shop Women</a>
+            </article>
+          </div>
+
+          <p class="hero-text">
+            At Adema Fragrance, we believe scent is more than a fragrance—it’s a
+            feeling, a memory, and a statement. Our carefully crafted perfumes
+            are designed to capture elegance, individuality, and lasting
+            impressions. Discover a collection where every note tells a story.
+          </p>
+
+          <h1>DISCOVER THE ART<br />OF FINE FRAGRANCE</h1>
+        </div>
+
+        <div class="hero-right">
+          <img src="billeder/blomst.webp" alt="Fine fragrance" />
+        </div>
+      </section>
+
+      <section class="bestsellers">
+        <h2>BESTSELLERS</h2>
+        <a href="html/shop.html" class="all-products">ALL PRODUCTS</a>
+      </section>
+    </main>
+    <footer>
+      <img src="../billeder/Logo.png" alt="Logo" class="footer-logo" />
+      <div class="footer-container">
+        <div class="footer-section">
+          <h1>Orders and support</h1>
+          <p>Contact us</p>
+          <p>FAQs</p>
+          <p>Shipping</p>
+          <p>Returns</p>
+          <p>Track your order</p>
+          <p>Terms of use</p>
+          <p>Product details</p>
+        </div>
+        <div class="footer-section">
+          <h1>About</h1>
+          <p>Our story</p>
+          <p>Careers</p>
+          <p>Privacy policy</p>
+          <p>Sustainability</p>
+          <p>Our team</p>
+        </div>
+        <div class="footer-section">
+          <h1>Find us</h1>
+          <p>Frederiksgade 4</p>
+          <p>1265, København K</p>
+          <p>Copenhagen, Denmark</p>
+        </div>
+        <div class="footer-section newsletter">
+          <h1>Newsletter</h1>
+          <form class="newsletter-form" action="#" method="POST">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+            />
+            <input type="tel" name="phone" placeholder="Phone number" />
+
+            <label class="terms">
+              <input type="checkbox" name="terms" required />
+              I accept the terms and conditions*
+            </label>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
