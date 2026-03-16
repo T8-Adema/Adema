@@ -38,6 +38,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1.5rem;
+  border-bottom: 1px solid #31331e;
 }
 
 .bestsellers h2 {
@@ -51,6 +52,45 @@
   text-decoration: none;
   color: #3f412f;
   border-bottom: 1px solid #3f412f;
+}
+
+/*cards section*/
+.front-products-wrapper {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.front-products-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.front-products {
+  display: grid;
+  grid-template-columns: repeat(4, 50%);
+}
+
+.front-product-card {
+  height: 300px;
+  border-right: 1px solid #31331e;
+  border-bottom: 1px solid #31331e;
+  text-align: center;
+  padding: 1.5rem 0 1.2rem;
+}
+
+.front-product-image {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.front-product-title,
+.front-product-price {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
 }
 
 @media (min-width: 1024px) {
@@ -112,9 +152,65 @@
   .bestsellers {
     padding: 2rem;
     margin-top: 1rem;
+    border-bottom: 1px solid #31331e;
   }
 
   .bestsellers h2 {
     font-size: 32px;
+  }
+
+  /*cards section*/
+  .front-products-wrapper {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .front-products-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .front-products {
+    display: flex;
+    width: max-content;
+    scroll-behavior: smooth;
+    border-bottom: 1px solid #31331e;
+  }
+
+  .front-product-card {
+    flex: 0 0 289px;
+    height: 458px;
+    border-right: 1px solid #31331e;
+    border-bottom: none;
+  }
+
+  .front-product-image {
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .front-product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .front-product-title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .front-product-price {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
   }
 }
