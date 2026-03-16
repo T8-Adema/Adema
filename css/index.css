@@ -37,14 +37,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1.5rem;
+  min-height: 100px;
+  padding: 0 1rem 0.4rem 1rem;
   border-bottom: 1px solid #31331e;
 }
 
 .bestsellers h2 {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
+  align-self: flex-end;
+  margin-bottom: 0.1rem;
 }
 
 .all-products {
@@ -52,6 +55,9 @@
   text-decoration: none;
   color: #3f412f;
   border-bottom: 1px solid #3f412f;
+  text-transform: uppercase;
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
 }
 
 /*cards section*/
@@ -91,6 +97,45 @@
   font-size: 14px;
   font-weight: 400;
   margin: 0;
+}
+
+/*brand section*/
+.brand-section {
+  border-bottom: 1px solid #31331e;
+}
+
+.brand-image {
+  position: relative;
+}
+
+.brand-photo {
+  width: 100%;
+  display: block;
+}
+
+.brand-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  filter: invert(1);
+}
+
+.brand-text {
+  padding: 3rem 1.5rem;
+}
+
+.brand-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.brand-text p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -159,6 +204,16 @@
     font-size: 32px;
   }
 
+  .all-products {
+    font-size: 18px;
+    text-decoration: none;
+    color: #3f412f;
+    border-bottom: 1px solid #3f412f;
+    text-transform: uppercase;
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
+
   /*cards section*/
   .front-products-wrapper {
     overflow-x: auto;
@@ -212,5 +267,45 @@
     font-style: normal;
     font-weight: 400;
     margin: 0;
+  }
+
+  /*brand section*/
+  .brand-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brand-image {
+    border-right: 1px solid #31331e;
+  }
+
+  .brand-photo {
+    width: 100%;
+    display: block;
+  }
+
+  .brand-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    filter: invert(1);
+  }
+
+  .brand-text {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .brand-text h2 {
+    font-size: 36px;
+  }
+
+  .brand-text p {
+    font-size: 16px;
+    max-width: 560px;
   }
 }
