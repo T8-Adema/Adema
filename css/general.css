@@ -19,12 +19,13 @@ header {
 
 .logo {
   justify-self: center;
+  margin-bottom: 0.8rem;
+  margin-top: 1.3rem;
 }
 
 .logo img {
   height: 40px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .nav-menu-left {
@@ -37,12 +38,14 @@ header {
   display: flex;
   gap: 80px;
   list-style: none;
+  margin-top: 1rem;
 }
 .nav-menu-right {
   justify-self: end;
   display: flex;
   align-items: center;
   margin-right: 30px;
+  margin-top: 1rem;
 }
 .nav-menu-right ul {
   display: flex;
@@ -71,13 +74,12 @@ footer {
 }
 
 footer h1 {
-  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 300;
   color: #fff;
   padding-bottom: 5px;
 
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   width: 210px;
   display: inline-block;
   margin-bottom: 15px;
@@ -88,8 +90,7 @@ footer h1 {
 }
 
 footer p {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 250;
   color: #fff;
   line-height: 1.8rem;
@@ -127,7 +128,7 @@ footer p {
 
 .newsletter-form button {
   padding: 8px 16px;
-  border: solid 2px #f8f6eb;
+  border: solid 1px #f8f6eb;
   background-color: transparent;
   color: #f8f6eb;
   font-weight: 600;
