@@ -232,3 +232,79 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about_intro,
+  .about_audience,
+  .about_reviews,
+  .about_who {
+    grid-template-columns: 1fr;
+    border: none;
+  }
+
+  .about_image {
+    display: none;
+  }
+
+  .about_text1 {
+    max-width: 22rem;
+    border: none;
+    padding: 4rem 2rem;
+  }
+
+  .about_audience .about_text2 {
+    border: none;
+    max-width: 22rem;
+    padding: 2rem 2rem;
+  }
+
+  .about_text3 {
+    max-width: 22rem;
+    order: 2;
+    padding: 2rem 2rem;
+  }
+
+  .about_who .about_image4 {
+    padding: 0px;
+  }
+
+  .about_who .about_text4 {
+    border: none;
+    max-width: 22rem;
+    padding: 2rem 2rem;
+  }
+
+  .about_image4 {
+    max-width: 22.5rem;
+  }
+
+  .about_media {
+    order: 1;
+    margin-top: 2rem;
+    border-top: solid 1px #31331e;
+    border-bottom: solid 1px #31331e;
+    max-width: 22.5rem;
+  }
+
+  .about_logo {
+    width: 130px;
+  }
+
+  .about_intro h1 {
+    margin-bottom: 2rem;
+    font-size: 28px;
+  }
+
+  .about_audience h2,
+  .about_reviews h2,
+  .about_who h2 {
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+
+  .about_btn {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+}
