@@ -1,0 +1,147 @@
+.about_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.about_image {
+  width: 80%;
+  max-width: 400px;
+  justify-self: center;
+  height: auto;
+  padding: 3rem;
+}
+
+.about_container h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+.about_container h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about_container p {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 200;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 35rem;
+  margin-bottom: 2rem;
+}
+
+.about_image2 {
+  width: 100%;
+  height: auto;
+}
+
+.about_btn {
+  padding: 8px 16px;
+  border: solid 2px #31331e;
+  background-color: transparent;
+  color: #31331e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Akshar", sans-serif;
+  padding: 20px 60px;
+}
+
+.about_image3_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  align-items: center;
+
+  border: solid 0.5px #31331e;
+}
+
+.about_image {
+  width: 80%;
+  max-width: 400px;
+  justify-self: center;
+  height: auto;
+  padding: 3rem;
+}
+
+.about_container h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+.about_container h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about_container p {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 200;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 35rem;
+  margin-bottom: 2rem;
+}
+
+.about_image2,
+.about_image4 {
+  width: 100%;
+  height: auto;
+
+  border-right: solid 1px #31331e;
+}
+
+.about_btn {
+  padding: 8px 16px;
+  border: solid 2px #31331e;
+  background-color: transparent;
+  color: #31331e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Akshar", sans-serif;
+  padding: 20px 60px;
+}
+
+.reviews_section {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.about_image3 {
+  width: 100%;
+  max-width: 400px;
+
+  border-left: solid 1px #31331e;
+}
+
+.about_logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_logo {
+  width: 300px;
+}
+
+.about_text1,
+.about_text2,
+.about_text3,
+.about_text4 {
+  margin-left: 2rem;
+}
+
+.about_text3 a {
+  text-decoration: underline;
+}
