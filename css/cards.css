@@ -5,8 +5,8 @@
 
 .product-card {
   position: relative;
-  border: 2px solid #31331e;
-  border-right: none;
+  border-bottom: 1px solid #31331e;
+  border-right:  1px solid #31331e;
   text-align: center;
   padding: 40px 20px;
   cursor: pointer;
@@ -17,7 +17,7 @@ article:hover {
 }
 
 .product-card:last-child {
-  border-right: 2px solid #31331e;
+  border-right: 1px solid #31331e;
 }
 
 .product-image {
