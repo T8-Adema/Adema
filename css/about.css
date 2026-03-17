@@ -1,128 +1,158 @@
-.about_container {
+/* ABOUT section */
+.about_intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: center;
+  align-items: stretch;
+
+  border-bottom: 1px solid #31331e;
 }
 
 .about_image {
-  width: 80%;
-  max-width: 400px;
-  justify-self: center;
+  width: 100%;
+  max-width: 420px;
   height: auto;
-  padding: 3rem;
+
+  justify-self: center;
+  align-self: center;
+
+  padding: 4rem;
 }
 
-.about_container h1 {
+.about_text1 {
+  border-left: 1px solid #31331e;
+
+  padding: 4rem 4rem 4rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_intro h1 {
   font-size: 40px;
   font-weight: 400;
-  margin-bottom: 5rem;
+  margin-bottom: 14rem;
 }
 
-.about_container h2 {
+.about_intro h2 {
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 
-.about_container p {
-  margin-top: 1rem;
+.about_intro p {
   font-size: 16px;
-  font-weight: 200;
   font-weight: 300;
-  line-height: 30px;
-  max-width: 35rem;
-  margin-bottom: 2rem;
+  line-height: 1.9;
+  max-width: 36rem;
+  margin-bottom: 0.5rem;
 }
 
-.about_image2 {
+/*Blomster section*/
+.about_audience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  border-bottom: 1px solid #31331e;
+}
+
+.about_audience .about_image2 {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.about_btn {
-  padding: 8px 16px;
-  border: solid 2px #31331e;
-  background-color: transparent;
-  color: #31331e;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-family: "Akshar", sans-serif;
-  padding: 20px 60px;
+.about_audience .about_text2 {
+  border-left: 1px solid #31331e;
+  padding: 4rem;
+
+  flex-direction: column;
+  justify-content: center;
 }
 
-.about_image3_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.about_audience h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  margin-top: 9rem;
+}
+.about_audience h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: #31331e;
+  margin-top: 0.5rem;
 }
 
-.about_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0px;
-  align-items: center;
-
-  border: solid 0.5px #31331e;
-}
-
-.about_image {
+.about_audience h2::after {
+  display: block;
   width: 80%;
-  max-width: 400px;
-  justify-self: center;
-  height: auto;
-  padding: 3rem;
+  height: 1px;
+  background: #31331e;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.about_container h1 {
-  font-size: 40px;
-  font-weight: 400;
-  margin-bottom: 5rem;
+.about_audience p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+}
+.about_btn {
+  align-self: flex-start;
+  padding: 18px 80px;
+  border: 1px solid #31331e;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3f412f;
+}
+.about_text2 p:last-of-type {
+  margin-bottom: 4rem;
 }
 
-.about_container h2 {
+/*review section*/
+
+.about_reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  border-bottom: 1px solid #31331e;
+}
+
+.about_text3 h2 {
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 1rem;
+  max-width: 30rem;
 }
 
-.about_container p {
-  margin-top: 1rem;
-  font-size: 16px;
-  font-weight: 200;
+.about_text3 {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-weight: 300;
-  line-height: 30px;
-  max-width: 35rem;
-  margin-bottom: 2rem;
+  max-width: 40rem;
+  line-height: 1.9;
 }
 
-.about_image2,
-.about_image4 {
-  width: 100%;
-  height: auto;
-
-  border-right: solid 1px #31331e;
-}
-
-.about_btn {
-  padding: 8px 16px;
-  border: solid 2px #31331e;
-  background-color: transparent;
-  color: #31331e;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-family: "Akshar", sans-serif;
-  padding: 20px 60px;
-}
-
-.reviews_section {
-  grid-template-columns: 2fr 1fr 1fr;
+.about_media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-left: 1px solid #31331e;
 }
 
 .about_image3 {
   width: 100%;
-  max-width: 400px;
-
-  border-left: solid 1px #31331e;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-right: 1px solid #31331e;
 }
 
 .about_logo_container {
@@ -132,16 +162,73 @@
 }
 
 .about_logo {
-  width: 300px;
+  width: 200px;
 }
 
-.about_text1,
-.about_text2,
-.about_text3,
-.about_text4 {
-  margin-left: 2rem;
+/*Who we are section*/
+.about_who {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  border-bottom: 1px solid #31331e;
 }
 
-.about_text3 a {
-  text-decoration: underline;
+.about_who .about_image4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about_who .about_text4 {
+  border-left: 1px solid #31331e;
+  padding: 4rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_who h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  margin-top: 9rem;
+}
+
+.about_who h2::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: #31331e;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about_who p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+}
+
+.about_text4 p:last-of-type {
+  margin-bottom: 4rem;
+}
+/*back to top button*/
+.back-to-top {
+  padding: 2.5rem 1.5rem;
+}
+
+.back-to-top a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #31331e;
+  border-bottom: 1px solid #31331e;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
 }
