@@ -140,3 +140,12 @@ footer p {
 .newsletter-form button:hover {
   background-color: #e0ddc1;
 }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  /* footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
