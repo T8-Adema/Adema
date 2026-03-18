@@ -1,4 +1,4 @@
-const endpoint = "https://dummyjson.com/products";
+const endpoint = "https://dummyjson.com/products/category/fragrances";
 
 const row1 = document.querySelector(".products-row-1");
 const row2 = document.querySelector(".products-row-2");
@@ -8,7 +8,9 @@ function getData() {
   fetch(endpoint)
     .then((response) => response.json())
     .then(showData)
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
 function createProductCard(product, index) {
@@ -36,6 +38,7 @@ function createProductCard(product, index) {
           src="${product.thumbnail}"
           alt="${product.title}"
           class="product-image"
+          loading="lazy"
         />
         <div class="product-info">
           <h3 class="product-title">${product.title}</h3>
