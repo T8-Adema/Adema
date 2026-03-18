@@ -165,6 +165,8 @@ footer p {
     padding: 0.9rem;
     position: relative;
     border-bottom: solid 1px #31331e;
+    z-index: 1000;
+    background-color: #f8f6eb;
   }
 
   .logo {
@@ -200,10 +202,11 @@ footer p {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #f3f1e8;
+    background: #f8f6eb;
     display: none;
     flex-direction: column;
     border-top: 1px solid #31331e;
+    z-index: 1001;
   }
 
   .mobile-menu.active {
