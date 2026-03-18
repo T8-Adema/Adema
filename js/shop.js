@@ -1,3 +1,4 @@
+
 const endpoint = "https://dummyjson.com/products";
 
 const row1 = document.querySelector(".products-row-1");
