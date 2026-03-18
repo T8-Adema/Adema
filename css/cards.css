@@ -12,6 +12,10 @@
   cursor: pointer;
 }
 
+.product-section.top {
+  margin-top: 1.8rem;
+}
+
 article:hover {
   background-color: #eeebdbc6;
 }
@@ -114,4 +118,30 @@ h2 {
   text-decoration: none;
   color: #3f412f;
   border-bottom: 1px solid #3f412f;
+}
+
+.shop-header {
+  text-align: end;
+  margin-top: 30px;
+  margin-right: 30px;
+  font-size: 1.2rem;
+  font-weight: 350;
+  color: #31331e;
+}
+
+.arrow {
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #3f412f;
+  border-bottom: 2px solid #3f412f;
+  transform: rotate(-45deg);
+  position: relative;
+  top: -3.5px;
+}
+
+.sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
