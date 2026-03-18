@@ -12,6 +12,7 @@
   position: relative;
   border-bottom: 1px solid #31331e;
   border-right: 1px solid #31331e;
+  border-top: 1px solid #31331e;
   text-align: center;
   padding: 40px 20px;
   cursor: pointer;
@@ -87,7 +88,6 @@ article:hover {
 .shop-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid #31331e;
 }
 
 .shop-image {
