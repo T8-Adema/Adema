@@ -73,7 +73,9 @@
 
 .front-products {
   display: grid;
-  grid-template-columns: repeat(4, 50%);
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  grid-template-rows: 1fr 1fr;
 }
 
 .front-product-card {
@@ -189,6 +191,48 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.sale .old-price {
+  text-decoration: line-through;
+  color: #3b3d2c8e;
+  margin-right: 8px;
+}
+
+.sale .new-price {
+  font-weight: 500;
+  color: #3b3d2c;
+}
+
+.soldout {
+  position: relative;
+}
+
+.soldout::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #3b3d2c2d;
+  z-index: 1;
+}
+
+.soldout-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  color: #31331e;
+  z-index: 2;
+}
+
+.front-product-info {
+  position: relative;
+  z-index: 2;
+}
+
+.front-product-image {
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 1024px) {
