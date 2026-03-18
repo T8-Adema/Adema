@@ -101,6 +101,11 @@
   font-weight: 400;
   margin: 0;
 }
+.front-product-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
 /*brand section*/
 
