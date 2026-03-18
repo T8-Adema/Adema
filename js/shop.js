@@ -1,4 +1,3 @@
-
 const endpoint = "https://dummyjson.com/products";
 
 const row1 = document.querySelector(".products-row-1");
@@ -31,24 +30,23 @@ function createProductCard(product, index) {
 
   return `
     <article class="product-card ${isSale ? "sale" : ""} ${isSoldOut ? "soldout" : ""}">
-      ${isSoldOut ? `<span class="soldout-text">SOLD OUT</span>` : ""}
-      <img
-        src="${product.thumbnail}"
-        alt="${product.title}"
-        class="product-image"
-      />
-
-      <div class="product-info">
-        <h3 class="product-title">${product.title}</h3>
-        ${priceMarkup}
-      </div>
+      <a href="productsite.html?id=${product.id}&sale=${isSale}&soldout=${isSoldOut}">
+        ${isSoldOut ? `<span class="soldout-text">SOLD OUT</span>` : ""}
+        <img
+          src="${product.thumbnail}"
+          alt="${product.title}"
+          class="product-image"
+        />
+        <div class="product-info">
+          <h3 class="product-title">${product.title}</h3>
+          ${priceMarkup}
+        </div>
+      </a>
     </article>
   `;
 }
 
 function showData(data) {
-  console.log(data);
-
   const perfumes = data.products.filter(
     (product) => product.category === "fragrances",
   );

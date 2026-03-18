@@ -17,6 +17,16 @@
   padding: 40px 20px;
   cursor: pointer;
 }
+.product-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.soldout::after,
+.soldout-text {
+  pointer-events: none;
+}
 
 .product-section.top {
   margin-top: 1.8rem;

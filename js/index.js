@@ -1,16 +1,13 @@
 const endpoint = "https://dummyjson.com/products";
 const container = document.querySelector(".front-products");
 
-console.log("JS loaded");
-console.log("container:", container);
-
 function getData() {
   fetch(endpoint)
     .then((response) => response.json())
     .then((data) => {
-      console.log("hele data:", data);
       showData(data);
-    });
+    })
+    .catch((err) => console.log(err));
 }
 
 function createProductCard(product, index) {
@@ -32,36 +29,32 @@ function createProductCard(product, index) {
 
   return `
     <article class="front-product-card ${isSale ? "sale" : ""} ${isSoldOut ? "soldout" : ""}">
-      ${isSoldOut ? `<span class="soldout-text">SOLD OUT</span>` : ""}
-      <img
-        src="${product.thumbnail}"
-        alt="${product.title}"
-        class="front-product-image"
-      />
-      <div class="front-product-info">
-        <h3 class="front-product-title">${product.title}</h3>
-        ${priceMarkup}
-      </div>
+      <a href="html/productsite.html?id=${product.id}&sale=${isSale}&soldout=${isSoldOut}">
+        ${isSoldOut ? `<span class="soldout-text">SOLD OUT</span>` : ""}
+        <img
+          src="${product.thumbnail}"
+          alt="${product.title}"
+          class="front-product-image"
+        />
+        <div class="front-product-info">
+          <h3 class="front-product-title">${product.title}</h3>
+          ${priceMarkup}
+        </div>
+      </a>
     </article>
   `;
 }
 
 function showData(data) {
-  console.log("products:", data.products);
-
   const perfumes = data.products.filter(
     (product) => product.category === "fragrances",
   );
-
-  console.log("perfumes:", perfumes);
 
   let repeatedProducts = [];
 
   for (let i = 0; i < 2; i++) {
     repeatedProducts = repeatedProducts.concat(perfumes);
   }
-
-  console.log("repeatedProducts:", repeatedProducts);
 
   let markup = "";
 
