@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/about.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -22,17 +23,135 @@
           <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
+
       <div class="logo">
-        <img src="../billeder/Logo.png" alt="Logo" />
+        <a href="../index.html">
+          <img src="../Billeder/Logo.png" alt="Logo" />
+        </a>
       </div>
+
       <nav class="nav-menu-right">
         <ul>
           <li><a href="#">SEARCH</a></li>
           <li><a href="#">CART</a></li>
         </ul>
       </nav>
+
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-menu">
+        <a href="../index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="about.html">ABOUT</a>
+        <a href="shop.html">BESTSELLERS</a>
+      </div>
     </header>
-    <main></main>
+
+    <main>
+      <div>
+        <section class="about_container about_intro">
+          <img
+            src="../billeder/about_billede1.webp"
+            alt="About Image"
+            class="about_image"
+          />
+          <div class="about_text1">
+            <h1>ABOUT</h1>
+            <h2>STORY RICH BRAND DESIGN</h2>
+            <p>
+              ADEMA is a fragrance destination for those who appreciate iconic
+              designer perfumes. We curate a selection of timeless scents from
+              globally recognized fashion houses such as CK, Gucci, Dior, Chanel
+              and Dolce & Gabbana.
+            </p>
+            <p>
+              At ADEMA, fragrance is more than a product - it is a personal
+              signature and a way to express identity. Our mission is to make
+              authentic luxury fragrances more accessible while celebrating the
+              emotional connection people have with scent.
+            </p>
+          </div>
+        </section>
+        <section class="about_container about_audience">
+          <img
+            src="../billeder/about_billede2.webp"
+            alt="About Image"
+            class="about_image2"
+          />
+          <div class="about_text2">
+            <h2>THE CORE AUDIENCE</h2>
+            <p>
+              ADEMA is designed for fragrance lovers who appreciate iconic
+              designer scents. Our core audience is mainly women aged 16-35 who
+              see perfume as part of their personal style and identity.
+            </p>
+            <p>
+              They are drawn to recognizable luxury fragrances that feel both
+              timeless and modern, using scent as a way to express themselves.
+            </p>
+            <a href="productsite.html" class="about_btn">
+              EXPLORE OUR COLLECTION
+            </a>
+          </div>
+        </section>
+
+        <section class="about_container about_reviews">
+          <div class="about_text3">
+            <h2>REVIEWS</h2>
+            <p>
+              At Adema Fragrance, we value every customer's experience. Our
+              review page is where fragrance lovers share their honest opinions,
+              helping others discover scents they'll truly enjoy. Your feedback
+              not only guides new customers but also helps us continue
+              delivering the quality and service you deserve.
+            </p>
+            <a>READ THEM HERE</a>
+          </div>
+
+          <div class="about_media">
+            <img
+              src="../billeder/about_billede3.webp"
+              alt="About Image"
+              class="about_image3"
+            />
+
+            <div class="about_logo_container">
+              <img src="../billeder/Logo.png" alt="Logo" class="about_logo" />
+            </div>
+          </div>
+        </section>
+
+        <section class="about_container about_who">
+          <img
+            src="../billeder/about_billede4.webp"
+            alt="About Image"
+            class="about_image4"
+          />
+          <div class="about_text4">
+            <h2>WHO ARE WE</h2>
+            <p>
+              At Adema Fragrance, we are passionate about bringing exceptional
+              scents to people who appreciate quality and elegance.
+            </p>
+            <p>
+              Our goal is to offer a carefully selected range of fragrances that
+              inspire confidence, individuality, and lasting impressions. We
+              believe the right fragrance is more than a scent—it's part of your
+              identity.
+            </p>
+          </div>
+        </section>
+
+        <section class="back-to-top">
+          <a href="#top">BACK TO TOP</a>
+        </section>
+      </div>
+    </main>
+
     <footer>
       <img src="../billeder/Logo.png" alt="Logo" class="footer-logo" />
       <div class="footer-container">
@@ -81,5 +200,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/burgermenu.js"></script>
   </body>
 </html>

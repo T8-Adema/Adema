@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/productsite.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -11,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <title>Shop</title>
+    <title>Product</title>
   </head>
   <body>
     <header>
@@ -22,17 +23,73 @@
           <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
+
       <div class="logo">
-        <img src="../billeder/Logo.png" alt="Logo" />
+        <a href="../index.html">
+          <img src="../Billeder/Logo.png" alt="Logo" />
+        </a>
       </div>
+
       <nav class="nav-menu-right">
         <ul>
           <li><a href="#">SEARCH</a></li>
           <li><a href="#">CART</a></li>
         </ul>
       </nav>
+
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-menu">
+        <a href="../index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="about.html">ABOUT</a>
+        <a href="shop.html">BESTSELLERS</a>
+      </div>
     </header>
-    <main></main>
+
+    <main>
+      <section class="product-site-grid">
+        <div class="product-img">
+          <img
+            src="../Billeder/DiorJadore.webp"
+            alt="Dior J'adore"
+            class="product-site-image"
+          />
+        </div>
+        <div class="product-description">
+          <p class="breadcrumb">Perfume - Chanel</p>
+          <h1>Dior J'adore</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            voluptatum quas nobis obcaecati repudiandae adipisci, explicabo,
+            odit provident corrupti dolorem aliquam quibusdam eveniet a
+            excepturi rem itaque maxime nihil nostrum.
+          </p>
+          <p class="product-site-price">589,00 DKK</p>
+          <button class="add-to-cart-button">Add to your cart</button>
+          <div class="product-accordions">
+            <details class="product-dropdown">
+              <summary>Product information</summary>
+              <div class="product-dropdown-content">
+                <p></p>
+              </div>
+            </details>
+
+            <details class="product-dropdown">
+              <summary>Ingredients</summary>
+              <div class="product-dropdown-content">
+                <p></p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <img src="../billeder/Logo.png" alt="Logo" class="footer-logo" />
       <div class="footer-container">
@@ -81,5 +138,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/burgermenu.js"></script>
   </body>
 </html>

@@ -1,0 +1,144 @@
+.product-site-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.product-site-grid img {
+  width: 100%;
+  height: 700px;
+  object-fit: contain;
+  border-bottom: 1px solid #31331e;
+  border-right: 1px solid #31331e;
+}
+
+.product-description h1 {
+  font-family: "Akshar", sans-serif;
+  font-weight: 100;
+
+  margin-bottom: 50px;
+}
+
+.product-description p {
+  margin-top: 20px;
+  color: #31331e;
+  max-width: 500px;
+  font-family: "Akshar", sans-serif;
+}
+
+.product-site-price {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3b3d2c;
+  margin-top: 20px;
+}
+
+.add-to-cart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3b3d2c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Akshar", sans-serif;
+  font-weight: 100;
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+.product-accordions {
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+.product-dropdown {
+  border-top: 1px solid #31331e;
+}
+
+.product-dropdown:last-child {
+  border-bottom: 1px solid #31331e;
+}
+
+.product-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 0;
+  font-family: "Akshar", sans-serif;
+  font-weight: 300;
+  color: #31331e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.product-dropdown summary::after {
+  content: "+";
+  color: #31331e;
+}
+
+.product-dropdown[open] summary::after {
+  content: "–";
+}
+
+.product-dropdown-content {
+  padding: 0 0 14px 0;
+  color: #31331e;
+  font-family: "Akshar", sans-serif;
+}
+
+.product-dropdown-content p {
+  margin-top: 10px;
+}
+
+.breadcrumb {
+  margin-top: 200px;
+  margin-bottom: 20px;
+  font-family: "Akshar", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #31331e;
+  opacity: 0.7;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .product-site-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .product-site-grid img {
+    height: auto;
+    max-height: 420px;
+    border-right: none;
+  }
+
+  .product-img,
+  .product-description {
+    padding: 20px;
+  }
+
+  .breadcrumb {
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+
+  .product-description h1 {
+    margin-bottom: 20px;
+  }
+
+  .product-description p,
+  .product-accordions {
+    max-width: 100%;
+  }
+
+  .add-to-cart-button {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 30px;
+  }
+}

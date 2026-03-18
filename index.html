@@ -9,19 +9,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap"
       rel="stylesheet"
     />
 
     <title>Document</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body id="top">
     <header>
       <nav class="nav-menu-left">
         <ul>
@@ -30,16 +25,34 @@
           <li><a href="html/about.html">ABOUT</a></li>
         </ul>
       </nav>
+
       <div class="logo">
-        <img src="billeder/Logo.png" alt="Logo" />
+        <a href="index.html">
+          <img src="Billeder/Logo.png" alt="Logo" />
+        </a>
       </div>
+
       <nav class="nav-menu-right">
         <ul>
           <li><a href="#">SEARCH</a></li>
           <li><a href="#">CART</a></li>
         </ul>
       </nav>
+
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="html/shop.html">SHOP</a>
+        <a href="html/about.html">ABOUT</a>
+        <a href="html/shop.html">BESTSELLERS</a>
+      </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="hero-left">
@@ -78,7 +91,68 @@
         <h2>BESTSELLERS</h2>
         <a href="html/shop.html" class="all-products">ALL PRODUCTS</a>
       </section>
+
+      <section class="front-products-wrapper">
+        <div class="front-products"></div>
+      </section>
+
+      <section class="brand-section">
+        <div class="brand-image">
+          <img
+            src="billeder/ademalogopic.webp"
+            alt="Adema brand image"
+            class="brand-photo"
+          />
+          <img src="billeder/Logo.png" alt="Adema logo" class="brand-logo" />
+        </div>
+
+        <div class="brand-text">
+          <h2>THE BRAND</h2>
+          <p>
+            ADEMA is a fragrance destination built for modern perfume lovers.
+            Our mission is to make iconic designer scents accessible while
+            celebrating the emotional connection people have with fragrance.
+          </p>
+
+          <p>
+            At ADEMA, we believe that fragrance is more than just a product – it
+            is a personal signature that reflects style, memories, and
+            individuality.
+          </p>
+
+          <p>
+            Inspired by the balance between tradition and modernity, ADEMA
+            brings together classic scents and contemporary taste.
+          </p>
+        </div>
+      </section>
+
+      <section class="guides-section">
+        <h2>GUIDES</h2>
+      </section>
+
+      <section class="guides-cards">
+        <article class="guide-card">
+          <img src="billeder/scents.webp" alt="Scents" />
+          <a href="#">SCENTS</a>
+        </article>
+
+        <article class="guide-card">
+          <img src="billeder/ingre.webp" alt="Ingredients" />
+          <a href="#">HOW TO WEAR</a>
+        </article>
+
+        <article class="guide-card">
+          <img src="billeder/howto.webp" alt="How to wear" />
+          <a href="#">INGREDIENTS</a>
+        </article>
+      </section>
+
+      <section class="back-to-top">
+        <a href="#top">BACK TO TOP</a>
+      </section>
     </main>
+
     <footer>
       <img src="../billeder/Logo.png" alt="Logo" class="footer-logo" />
       <div class="footer-container">
@@ -92,6 +166,7 @@
           <p>Terms of use</p>
           <p>Product details</p>
         </div>
+
         <div class="footer-section">
           <h1>About</h1>
           <p>Our story</p>
@@ -100,12 +175,14 @@
           <p>Sustainability</p>
           <p>Our team</p>
         </div>
+
         <div class="footer-section">
           <h1>Find us</h1>
           <p>Frederiksgade 4</p>
           <p>1265, København K</p>
           <p>Copenhagen, Denmark</p>
         </div>
+
         <div class="footer-section newsletter">
           <h1>Newsletter</h1>
           <form class="newsletter-form" action="#" method="POST">
@@ -127,5 +204,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/burgermenu.js"></script>
   </body>
 </html>
