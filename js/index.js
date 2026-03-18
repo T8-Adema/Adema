@@ -57,7 +57,7 @@ function showData(data) {
 
   let repeatedProducts = [];
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 2; i++) {
     repeatedProducts = repeatedProducts.concat(perfumes);
   }
 

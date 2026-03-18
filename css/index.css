@@ -73,7 +73,9 @@
 
 .front-products {
   display: grid;
-  grid-template-columns: repeat(4, 50%);
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  grid-template-rows: 1fr 1fr;
 }
 
 .front-product-card {
