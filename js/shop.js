@@ -50,9 +50,7 @@ function createProductCard(product, index) {
 }
 
 function showData(data) {
-  const perfumes = data.products.filter(
-    (product) => product.category === "fragrances",
-  );
+  const perfumes = data.products.filter((product) => product.category === "fragrances");
 
   let repeatedProducts = [];
 
