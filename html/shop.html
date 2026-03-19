@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/cards.css" />
+    <link rel="stylesheet" href="../css/sort.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet" />
 
     <title>Shop</title>
   </head>
@@ -53,9 +51,17 @@
       </div>
     </header>
 
-    <section class="shop-header">
-      <span class="sort"> SORT BY <span class="arrow"></span> </span>
-    </section>
+    <div class="sort-container">
+      <div class="sort-header" id="sortToggle">SORT BY <span class="arrow">⌄</span></div>
+
+      <div class="sort-menu" id="sortMenu">
+        <p data-sort="price-low">Price Low-High</p>
+        <p data-sort="price-high">Price High-Low</p>
+        <p data-sort="az">A-Z</p>
+        <p data-sort="za">Z-A</p>
+        <p data-sort="rating">Best rated</p>
+      </div>
+    </div>
 
     <main>
       <section class="product-section top"></section>
@@ -64,20 +70,14 @@
 
       <section class="shop-section">
         <div class="shop-image-container">
-          <img
-            src="../Billeder/shopBlomst.webp"
-            alt="blomst"
-            class="shop-image"
-          />
+          <img src="../Billeder/shopBlomst.webp" alt="blomst" class="shop-image" />
         </div>
 
         <div class="shop-text-container">
           <h2>EXPLORE THE COLLECTION</h2>
           <p>
-            Discover a curated selection of iconic fragrances from some of the
-            world’s most renowned fashion houses. <br />
-            From timeless classics to modern favorites, each scent is chosen for
-            its character, quality, and lasting appeal.
+            Discover a curated selection of iconic fragrances from some of the world’s most renowned fashion houses. <br />
+            From timeless classics to modern favorites, each scent is chosen for its character, quality, and lasting appeal.
           </p>
           <a href="#" class="read-more">READ MORE</a>
         </div>
@@ -127,12 +127,7 @@
         <div class="footer-section newsletter">
           <h1>Newsletter</h1>
           <form class="newsletter-form" action="#" method="POST">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address"
-              required
-            />
+            <input type="email" name="email" placeholder="Email address" required />
             <input type="tel" name="phone" placeholder="Phone number" />
 
             <label class="terms">
@@ -149,5 +144,6 @@
     <script src="../js/shop.js"></script>
     <script src="../js/burgermenu.js"></script>
     <script src="../js/productsite.js"></script>
+    <script src="../js/sort.js"></script>
   </body>
 </html>
