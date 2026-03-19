@@ -1,6 +1,7 @@
 .product-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-top: 1px solid #31331e;
 }
 
 .product-section2 {
@@ -10,9 +11,7 @@
 
 .product-card {
   position: relative;
-  border-bottom: 1px solid #31331e;
   border-right: 1px solid #31331e;
-  border-top: 1px solid #31331e;
   text-align: center;
   padding: 40px 20px;
   cursor: pointer;
@@ -98,6 +97,7 @@ article:hover {
 .shop-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #31331e;
 }
 
 .shop-image {
@@ -134,6 +134,52 @@ h2 {
   text-decoration: none;
   color: #3f412f;
   border-bottom: 1px solid #3f412f;
+}
+
+.shop-header {
+  text-align: end;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: 350;
+  color: #31331e;
+}
+
+.arrow {
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #3f412f;
+  border-bottom: 2px solid #3f412f;
+  transform: rotate(-45deg);
+  position: relative;
+  top: -3.5px;
+}
+
+.sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/*back to top button*/
+.back-to-top {
+  padding: 2.5rem 1.5rem;
+  border-top: 1px solid #31331e;
+}
+
+.back-to-top a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #31331e;
+  border-bottom: 1px solid #31331e;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* MOBILE */

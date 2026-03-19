@@ -3,12 +3,11 @@ const productId = params.get("id") || 1;
 const isSale = params.get("sale") === "true";
 const isSoldOut = params.get("soldout") === "true";
 
+const productGrid = document.querySelector(".product-site-grid");
 const image = document.querySelector(".product-site-image");
 const breadcrumb = document.querySelector(".breadcrumb");
 const title = document.querySelector(".product-description h1");
-const description = document.querySelector(
-  ".product-description p:not(.breadcrumb):not(.product-site-price)",
-);
+const description = document.querySelector(".product-text");
 const price = document.querySelector(".product-site-price");
 const infoContent = document.querySelectorAll(".product-dropdown-content p");
 const addToCartButton = document.querySelector(".add-to-cart-button");
@@ -29,15 +28,15 @@ function getProductData() {
     })
     .catch((error) => {
       console.log("Fejl:", error);
+
+      if (title) title.textContent = "Product not found";
+      if (description)
+        description.textContent = "Kunne ikke hente produktdata.";
+      if (productGrid) productGrid.style.visibility = "visible";
     });
 }
 
 function showProduct(product) {
-  if (image) {
-    image.src = product.thumbnail;
-    image.alt = product.title;
-  }
-
   if (breadcrumb) {
     breadcrumb.textContent = `${product.category} - ${product.brand}`;
   }
@@ -88,6 +87,21 @@ function showProduct(product) {
   }
 
   document.title = product.title;
+
+  if (image) {
+    image.onload = () => {
+      if (productGrid) {
+        productGrid.style.visibility = "visible";
+      }
+    };
+
+    image.src = product.thumbnail;
+    image.alt = product.title;
+  } else {
+    if (productGrid) {
+      productGrid.style.visibility = "visible";
+    }
+  }
 }
 
 getProductData();
